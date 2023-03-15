@@ -1,0 +1,94 @@
+.devices {
+  height: 100%;
+}
+
+.devices__phone,
+.devices__tablet,
+.devices__laptop {
+  position: relative;
+  width: 35px;
+}
+
+.device img {
+  width: 100%;
+}
+
+.laptop__mask,
+.tablet__mask,
+.phone__mask {
+  position: absolute;
+  overflow: hidden;
+}
+
+.laptop__mask {
+  width: 27px;
+  height: 16px;
+  left: 4px;
+  top: 8px;
+}
+
+.tablet__mask {
+  width: 18px;
+  height: 23px;
+  top: 6px;
+  left: 8px;
+}
+
+.phone__mask {
+  width: 13px;
+  height: 7px;
+  top: 10px;
+  left: 11px;
+}
+
+.laptop__mask::before,
+.tablet__mask::before,
+.phone__mask::before {
+  content: '';
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+}
+
+.devices {
+  --duration: 4s;
+}
+
+.laptop__mask::before {
+  background-image: url(./image/small_mask.png);
+  left: -4px;
+  top: -8px;
+  animation: linear wipe forwards;
+
+  animation-duration: var(--duration);
+}
+
+.tablet__mask::before {
+  background-image: url(./image/medium_mask.png);
+  top: -6px;
+  left: -8px;
+  animation: linear wipe forwards;
+
+  animation-duration: var(--duration);
+}
+
+.phone__mask::before {
+  background-image: url(./image/medium_mask.png);
+  top: -6px;
+  left: -8px;
+  animation: linear wipe forwards;
+
+  animation-duration: var(--duration);
+}
+
+@keyframes wipe {
+  0% {
+    transform: translateX(-35px);
+  } 
+  100% {
+    transform: translateX(0%);
+  }
+}

@@ -1,0 +1,32 @@
+.oceania {
+  position: absolute;
+  width: 134px;
+  height: 117px;
+  bottom: 12%;
+  right: 11%;
+  /* background-color: rgba(118, 105, 105, 0.4); */
+}
+
+.oceania .clients {
+  position: absolute;
+  top: 0%;
+  left: 28%;
+}
+
+.oceania .devices__phone {
+  position: absolute;
+  top: 42%;
+  left: 34%;
+}
+
+.oceania .devices__tablet {
+  position: absolute;
+  top: 40%;
+  left: -5%;
+}
+
+.oceania .devices__laptop {
+  position: absolute;
+  top: 37%;
+  left: 74%;
+}

@@ -1,0 +1,31 @@
+.asia {
+  position: absolute;
+  width: 230px;
+  height: 245px;
+  top: 39%;
+  right: 15%;
+  /* background-color: rgba(118, 105, 105, 0.4); */
+}
+
+.asia .clients {
+  position: absolute;
+  top: 26%;
+  left: 27%;
+}
+
+.asia .devices__phone {
+  position: absolute;
+  top: 4%;
+  left: 75%;
+}
+
+.asia .devices__tablet {
+  position: absolute;
+  top: 44%;
+}
+
+.asia .devices__laptop {
+  position: absolute;
+  top: 34%;
+  left: 52%;
+}

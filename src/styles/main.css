@@ -1,0 +1,44 @@
+@import "./nortAmerica.css";
+@import "./europe.css";
+@import "./asia.css";
+@import "./southAmerica.css";
+@import "./oceania.css";
+
+@import "./clients.css";
+@import "./devices.css";
+@import "./placeServer.css";
+
+
+.map {
+  position: relative;
+  margin: 0 auto;
+  width: 1280px;
+  height: 720px;
+  background-image: url(./image/map.png);
+}
+
+
+.map__header{
+  font-size: 24px;
+  height: 24px;
+}
+
+.btn {
+  cursor: pointer;
+  color: blue;
+  width: 60px;
+}
+
+.disabled {
+  display: none;
+}
+
+.line{
+  position: absolute;
+  top: 0%;
+}
+
+
+
+
+

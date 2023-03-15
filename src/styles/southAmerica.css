@@ -1,0 +1,32 @@
+.southAmerica {
+  position: absolute;
+  width: 145px;
+  height: 160px;
+  bottom: 13%;
+  left: 26%;
+  /* background-color: rgba(118, 105, 105, 0.4); */
+}
+
+.southAmerica .clients {
+  position: absolute;
+  top: 3%;
+  left: 37%;
+}
+
+.southAmerica .devices__phone {
+  position: absolute;
+  top: 6%;
+  left: 20%;
+}
+
+.southAmerica .devices__tablet {
+  position: absolute;
+  top: 67%;
+  left: 44%;
+}
+
+.southAmerica .devices__laptop {
+  position: absolute;
+  top: 24%;
+  left: 64%;
+}

@@ -1,0 +1,31 @@
+.europe {
+  position: absolute;
+  width: 225px;
+  height: 210px;
+  top: 20%;
+  left: 45%;
+  /* background-color: rgba(118, 105, 105, 0.4); */
+}
+
+.europe .clients {
+  position: absolute;
+  top: 54%;
+  left: 27%;
+}
+
+.europe .devices__phone {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+}
+
+.europe .devices__tablet {
+  position: absolute;
+  top: 82%;
+}
+
+.europe .devices__laptop {
+  position: absolute;
+  top: 63%;
+  left: 39%;
+}

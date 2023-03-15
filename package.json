@@ -1,0 +1,27 @@
+{
+  "name": "map_storage",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "eslint": "^8.34.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "gh-pages": "2.0.0",
+    "parcel": "^2.6.2"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cubejs-client/core": "^0.31.0"
+  }
+}

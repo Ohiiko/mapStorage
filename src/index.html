@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    
+  </head>
+  <body>
+    <div class="map">
+      <div class="map__header">
+        <div class="choose__region">Where are you users? Choose the number for every region.
+          <span class="btn startChengeServer disabled">Next</span>
+        </div>
+        <div class="choose__server disabled">Where is your data? Choose one number spot for Object Storage system.
+          <span class="btn startAnimation disabled">Start</span>
+        </div>
+      </div>
+
+      <div class="map__regions">
+        <div class="northAmerica">
+          <div class="clients northAmerica__clients">
+            <label class="client bigClient">
+              <input
+                type="radio"
+                name="client"
+                value="3"
+              >
+              <img src="./styles/image/man_empty.png" alt="client">
+            </label>
+            <label class="client middleClient">
+              <input
+                type="radio"
+                name="client"
+                value="2"
+              >
+              <img src="./styles/image/man_empty.png" alt="client">
+            </label>
+            <label class="client smallClient">
+              <input
+                type="radio"
+                name="client"
+                value="1"
+              >
+              <img src="./styles/image/man_empty.png" alt="client">
+            </label>
+  
+          </div>
+          <div class="devices northAmerica__devices">
+            <div class="device devices__laptop disabled">
+              <span class="mask laptop__mask disabled"></span>
+              <img src="./styles/image/small.png" alt="laptop">
+            </div>
+            <div class="device devices__tablet disabled">
+              <span class="mask tablet__mask disabled"></span>
+              <img src="./styles/image/medium.png" alt="tablet">
+            </div>
+            <div class="device devices__phone disabled">
+              <span class="mask phone__mask disabled"></span>
+              <img src="./styles/image/large.png" alt="phone">
+            </div>
+          </div>
+        </div>
+  
+        <div class="southAmerica">
+          <div class="clients southAmerica__clients">
+            <label class="client bigClient">
+              <input
+                type="radio"
+                name="client"
+                value="3"
+              >
+              <img src="./styles/image/man_empty.png" alt="client">
+            </label>
+            <label class="client middleClient">
+              <input
+                type="radio"
+                name="client"
+                value="2"
+              >
+              <img src="./styles/image/man_empty.png" alt="client">
+            </label>
+            <label class="client smallClient">
+              <input
+                type="radio"
+                name="client"
+                value="1"
+              >
+              <img src="./styles/image/man_empty.png" alt="client">
+            </label>
+  
+          </div>
+          <div class="devices southAmerica__devices">
+            <div class="device devices__laptop disabled">
+              <span class="mask laptop__mask disabled"></span>
+              <img src="./styles/image/small.png" alt="laptop">
+            </div>
+            <div class="device devices__tablet disabled">
+              <span class="mask tablet__mask disabled"></span>
+              <img src="./styles/image/medium.png" alt="tablet">
+            </div>
+            <div class="device devices__phone disabled">
+              <span class="mask phone__mask disabled"></span>
+              <img src="./styles/image/large.png" alt="phone">
+            </div>
+          </div>
+        </div>
+  
+        <div class="europe">
+          <div class="clients europe__clients">
+            <label class="client bigClient">
+              <input
+                type="radio"
+                name="client"
+                value="3"
+              >
+              <img src="./styles/image/man_empty.png" alt="client">
+            </label>
+            <label class="client middleClient">
+              <input
+                type="radio"
+                name="client"
+                value="2"
+              >
+              <img src="./styles/image/man_empty.png" alt="client">
+            </label>
+            <label class="client smallClient">
+              <input
+                type="radio"
+                name="client"
+                value="1"
+              >
+              <img src="./styles/image/man_empty.png" alt="client">
+            </label>
+  
+          </div>
+  
+          <div class="devices europe__devices">
+            <div class="device devices__laptop disabled">
+              <span class="mask laptop__mask disabled"></span>
+              <img src="./styles/image/small.png" alt="laptop">
+            </div>
+            <div class="device devices__tablet disabled">
+              <span class="mask tablet__mask disabled"></span>
+              <img src="./styles/image/medium.png" alt="tablet">
+            </div>
+            <div class="device devices__phone disabled">
+              <span class="mask phone__mask disabled"></span>
+              <img src="./styles/image/large.png" alt="phone">
+            </div>
+          </div>
+        </div>
+  
+        <div class="asia">
+          <div class="clients asia__clients">
+            <label class="client bigClient">
+              <input
+                type="radio"
+                name="client"
+                value="3"
+              >
+              <img src="./styles/image/man_empty.png" alt="client">
+            </label>
+            <label class="client middleClient">
+              <input
+                type="radio"
+                name="client"
+                value="2"
+              >
+              <img src="./styles/image/man_empty.png" alt="client">
+            </label>
+            <label class="client smallClient">
+              <input
+                type="radio"
+                name="client"
+                value="1"
+              >
+              <img src="./styles/image/man_empty.png" alt="client">
+            </label>
+  
+          </div>
+  
+          <div class="devices asia__devices">
+            <div class="device devices__laptop disabled">
+              <span class="mask laptop__mask disabled"></span>
+              <img src="./styles/image/small.png" alt="laptop">
+            </div>
+            <div class="device devices__tablet disabled">
+              <span class="mask tablet__mask disabled"></span>
+              <img src="./styles/image/medium.png" alt="tablet">
+            </div>
+            <div class="device devices__phone disabled">
+              <span class="mask phone__mask disabled"></span>
+              <img src="./styles/image/large.png" alt="phone">
+            </div>
+          </div>
+        </div>
+  
+        <div class="oceania">
+          <div class="clients oceania__clients">
+            <label class="client bigClient">
+              <input
+                type="radio"
+                name="client"
+                value="3"
+              >
+              <img src="./styles/image/man_empty.png" alt="client">
+            </label>
+            <label class="client middleClient">
+              <input
+                type="radio"
+                name="client"
+                value="2"
+              >
+              <img src="./styles/image/man_empty.png" alt="client">
+            </label>
+            <label class="client smallClient">
+              <input
+                type="radio"
+                name="client"
+                value="1"
+              >
+              <img src="./styles/image/man_empty.png" alt="client">
+            </label>
+  
+          </div>
+          <div class="devices oceania__devices">
+            <div class="device devices__laptop disabled">
+              <span class="mask laptop__mask disabled"></span>
+              <img src="./styles/image/small.png" alt="laptop">
+            </div>
+            <div class="device devices__tablet disabled">
+              <span class="mask tablet__mask disabled"></span>
+              <img src="./styles/image/medium.png" alt="tablet">
+            </div>
+            <div class="device devices__phone disabled">
+              <span class="mask phone__mask disabled"></span>
+              <img src="./styles/image/large.png" alt="phone">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="map__servers">
+        <div class="westUsa__server">
+          <span class="placeServer westUsa disabled"></span>
+          <div class="lines westUsa__lines">
+            <div class="lines__southAmerica">
+              <img
+                class="line westUsa--southAmerica disabled"
+                src="./styles/image/arc_west-usa_south-america_small.png"
+                alt="laptop"
+              >
+              <img
+                class="line westUsa--southAmerica disabled"
+                src="./styles/image/arc_west-usa_south-america_medium.png"
+                alt="tablet"
+              >
+              <img
+              class="line westUsa--southAmerica disabled"
+              src="./styles/image/arc_west-usa_south-america_large.png"
+              alt="phone"
+              >
+            </div>
+            <div class="lines__northAmerica">
+              <img
+              class="line westUsa--northAmerica disabled"
+              src="./styles/image/arc_west-usa_north-america_small.png"
+              alt="laptop"
+              >
+              <img
+                class="line westUsa--northAmerica disabled"
+                src="./styles/image/arc_west-usa_north-america_medium.png"
+                alt="tablet"
+              >
+              <img
+                class="line westUsa--northAmerica disabled"
+                src="./styles/image/arc_west-usa_north-america_large.png"
+                alt="phone"
+              >
+            </div>
+            <div class="lines__europe">
+              <img
+              class="line westUsa--europe disabled"
+              src="./styles/image/arc_west-usa_europe_small.png"
+              alt="laptop"
+              >
+              <img
+                class="line westUsa--europe disabled"
+                src="./styles/image/arc_west-usa_europe_medium.png"
+                alt="tablet"
+              >
+              <img
+                class="line westUsa--europe disabled"
+                src="./styles/image/arc_west-usa_europe_large.png"
+                alt="phone"
+              >
+            </div>
+            <div class="lines__asia">
+              <img
+              class="line westUsa--asia disabled"
+              src="./styles/image/arc_west-usa_asia_small.png"
+              alt="laptop"
+              >
+              <img
+                class="line westUsa--asia disabled"
+                src="./styles/image/arc_west-usa_asia_medium.png"
+                alt="tablet"
+              >
+              <img
+                class="line westUsa--asia disabled"
+                src="./styles/image/arc_west-usa_asia_large.png"
+                alt="phone"
+              >
+            </div>
+  
+            <div class="lines__oceania">
+              <img
+              class="line westUsa--oceania disabled"
+              src="./styles/image/arc_west-usa_oceania_small.png"
+              alt="laptop"
+              >
+              <img
+                class="line westUsa--oceania disabled"
+                src="./styles/image/arc_west-usa_oceania_medium.png"
+                alt="tablet"
+              >
+              <img
+              class="line westUsa--oceania disabled"
+              src="./styles/image/arc_west-usa_oceania_large.png"
+              alt="phone"
+              >
+            </div>
+          </div>
+        </div>
+  
+        <div class="eastUsa__server">
+          <span class="placeServer eastUsa disabled"></span>
+          <div class="lines eastUsa__lines">
+            <div class="lines__northAmerica">
+              <img
+              class="line eastUsa--northAmerica disabled"
+              src="./styles/image/arc_east-usa_north-america_small.png"
+              alt="laptop"
+              >
+              <img
+                class="line eastUsa--northAmerica disabled"
+                src="./styles/image/arc_east-usa_north-america_medium.png"
+                alt="tablet"
+              >
+              <img
+                class="line eastUsa--northAmerica disabled"
+                src="./styles/image/arc_east-usa_north-america_large.png"
+                alt="phone"
+              >
+            </div>
+            <div class="lines__southAmerica">
+              <img
+                class="line eastUsa--southAmerica disabled"
+                src="./styles/image/arc_east-usa_south-america_small.png"
+                alt="laptop"
+              >
+              <img
+                class="line eastUsa--southAmerica disabled"
+                src="./styles/image/arc_east-usa_south-america_medium.png"
+                alt="tablet"
+              >
+              <img
+              class="line eastUsa--southAmerica disabled"
+              src="./styles/image/arc_east-usa_south-america_large.png"
+              alt="phone"
+              >
+            </div>
+            <div class="lines__europe">
+              <img
+              class="line eastUsa--europe disabled"
+              src="./styles/image/arc_east-usa_europe_small.png"
+              alt="laptop"
+              >
+              <img
+                class="line eastUsa--europe disabled"
+                src="./styles/image/arc_east-usa_europe_medium.png"
+                alt="tablet"
+              >
+              <img
+                class="line eastUsa--europe disabled"
+                src="./styles/image/arc_east-usa_europe_large.png"
+                alt="phone"
+              >
+            </div>
+            <div class="lines__asia">
+              <img
+              class="line eastUsa--asia disabled"
+              src="./styles/image/arc_east-usa_asia_small.png"
+              alt="laptop"
+              >
+              <img
+                class="line eastUsa--asia disabled"
+                src="./styles/image/arc_east-usa_asia_medium.png"
+                alt="tablet"
+              >
+              <img
+                class="line eastUsa--asia disabled"
+                src="./styles/image/arc_east-usa_asia_large.png"
+                alt="phone"
+              >
+            </div>
+            <div class="lines__oceania">
+              <img
+              class="line eastUsa--oceania disabled"
+              src="./styles/image/arc_east-usa_oceania_small.png"
+              alt="laptop"
+              >
+              <img
+                class="line eastUsa--oceania disabled"
+                src="./styles/image/arc_east-usa_oceania_medium.png"
+                alt="tablet"
+              >
+              <img
+              class="line eastUsa--oceania disabled"
+              src="./styles/image/arc_east-usa_oceania_large.png"
+              alt="phone"
+              >
+            </div>
+          </div>
+        </div>
+  
+        <div class="germany__server">
+          <span class="placeServer germany disabled"></span>
+          <div class="germany__lines lines">
+            <div class="lines__europe">
+              <img
+              class="line germany--europe disabled"
+              src="./styles/image/arc_germany_europe_small.png"
+              alt="laptop"
+              >
+              <img
+                class="line germany--europe disabled"
+                src="./styles/image/arc_germany_europe_medium.png"
+                alt="tablet"
+              >
+              <img
+                class="line germany--europe disabled"
+                src="./styles/image/arc_germany_europe_large.png"
+                alt="phone"
+              >
+            </div>
+            <div class="lines__asia">
+              <img
+              class="line germany--asia disabled"
+              src="./styles/image/arc_germany_asia_small.png"
+              alt="laptop"
+              >
+              <img
+                class="line germany--asia disabled"
+                src="./styles/image/arc_germany_asia_medium.png"
+                alt="tablet"
+              >
+              <img
+                class="line germany--asia disabled"
+                src="./styles/image/arc_germany_asia_large.png"
+                alt="phone"
+              >
+            </div>
+            <div class="lines__oceania">
+              <img
+              class="line germany--oceania disabled"
+              src="./styles/image/arc_germany_oceania_small.png"
+              alt="laptop"
+              >
+              <img
+                class="line germany--oceania disabled"
+                src="./styles/image/arc_germany_oceania_medium.png"
+                alt="tablet"
+              >
+              <img
+              class="line germany--oceania disabled"
+              src="./styles/image/arc_germany_oceania_large.png"
+              alt="phone"
+              >
+            </div>
+            <div class="lines__northAmerica">
+              <img
+              class="line germany--northAmerica disabled"
+              src="./styles/image/arc_germany_north-america_small.png"
+              alt="laptop"
+              >
+              <img
+                class="line germany--northAmerica disabled"
+                src="./styles/image/arc_germany_north-america_medium.png"
+                alt="tablet"
+              >
+              <img
+                class="line germany--northAmerica disabled"
+                src="./styles/image/arc_germany_north-america_large.png"
+                alt="phone"
+              >
+            </div>
+            <div class="lines__southAmerica">
+              <img
+                class="line germany--southAmerica disabled"
+                src="./styles/image/arc_germany_south-america_small.png"
+                alt="laptop"
+              >
+              <img
+                class="line germany--southAmerica disabled"
+                src="./styles/image/arc_germany_south-america_medium.png"
+                alt="tablet"
+              >
+              <img
+              class="line germany--southAmerica disabled"
+              src="./styles/image/arc_germany_south-america_large.png"
+              alt="phone"
+              >
+            </div>
+  
+          </div>
+        </div>
+  
+        <div class="singapore__server">
+          <span class="placeServer singapore disabled"></span>
+          <div class="lines singapore__lines ">
+            <div class="lines__asia">
+              <img
+              class="line singapore--asia disabled"
+              src="./styles/image/arc_singapore_asia_small.png"
+              alt="laptop"
+              >
+              <img
+                class="line singapore--asia disabled"
+                src="./styles/image/arc_singapore_asia_medium.png"
+                alt="tablet"
+              >
+              <img
+                class="line singapore--asia disabled"
+                src="./styles/image/arc_singapore_asia_large.png"
+                alt="phone"
+              >
+            </div>
+            <div class="lines__oceania">
+              <img
+              class="line singapore--oceania disabled"
+              src="./styles/image/arc_singapore_oceania_small.png"
+              alt="laptop"
+              >
+              <img
+                class="line singapore--oceania disabled"
+                src="./styles/image/arc_singapore_oceania_medium.png"
+                alt="tablet"
+              >
+              <img
+              class="line singapore--oceania disabled"
+              src="./styles/image/arc_singapore_oceania_large.png"
+              alt="phone"
+              >
+            </div>
+            <div class="lines__northAmerica">
+              <img
+              class="line singapore--northAmerica disabled"
+              src="./styles/image/arc_singapore_north-america_small.png"
+              alt="laptop"
+              >
+              <img
+                class="line singapore--northAmerica disabled"
+                src="./styles/image/arc_singapore_north-america_medium.png"
+                alt="tablet"
+              >
+              <img
+                class="line singapore--northAmerica disabled"
+                src="./styles/image/arc_singapore_north-america_large.png"
+                alt="phone"
+              >
+            </div>
+            <div class="lines__europe">
+              <img
+              class="line singapore--europe disabled"
+              src="./styles/image/arc_singapore_europe_small.png"
+              alt="laptop"
+              >
+              <img
+                class="line singapore--europe disabled"
+                src="./styles/image/arc_singapore_europe_medium.png"
+                alt="tablet"
+              >
+              <img
+                class="line singapore--europe disabled"
+                src="./styles/image/arc_singapore_europe_large.png"
+                alt="phone"
+              >
+            </div>
+            <div class="lines__southAmerica">
+              <img
+                class="line singapore--southAmerica disabled"
+                src="./styles/image/arc_singapore_south-america_small.png"
+                alt="laptop"
+              >
+              <img
+                class="line singapore--southAmerica disabled"
+                src="./styles/image/arc_singapore_south-america_medium.png"
+                alt="tablet"
+              >
+              <img
+              class="line singapore--southAmerica disabled"
+              src="./styles/image/arc_singapore_south-america_large.png"
+              alt="phone"
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

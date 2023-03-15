@@ -1,0 +1,52 @@
+.placeServer,
+.serverClient,
+.serverByteCloud {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.serverClient,
+.serverByteCloud {
+  width: 48px;
+  height: 48px;
+}
+
+.placeServer {
+  background-image: url(./image/circle_empty.png);
+}
+
+.placeServer:hover {
+  background-image: url(./image/circle_filled.png);
+}
+
+.serverClient {
+  background-image: url(./image/server.png);
+}
+
+.serverByteCloud {
+  background-image: url(./image/server_ByteCloud.png);
+}
+
+.westUsa {
+  top: 45%;
+  left: 13%;
+}
+
+.eastUsa {
+  top: 43%;
+  left: 28%;
+}
+
+.germany {
+  top: 39%;
+  left: 48%;
+}
+
+.singapore {
+  top: 68%;
+  left: 75%;
+}

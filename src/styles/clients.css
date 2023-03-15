@@ -1,0 +1,38 @@
+.clients {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.client > input{
+  visibility: hidden; 
+  position: absolute;
+}
+
+.client img{
+  cursor:pointer;
+  border:2px solid transparent;
+}
+
+.smallClient img{
+  height: 24px;
+}
+
+.middleClient img{
+  height: 40px;
+}
+
+.bigClient img{
+  height: 56px;
+}
+
+.bigClient:hover ~ .client img,
+.middleClient:hover ~ .client img,
+.smallClient:hover img,
+.middleClient:hover img,
+.bigClient:hover img {
+  background-image: url(./image/man_filled.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
